@@ -11,10 +11,10 @@ struct Node* head = NULL;
 void insert(int id) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->heroID = id;
-    newNode->next = NULL;
 
     if (head == NULL) {
         head = newNode;
+        newNode->next = NULL;
         return;
     }
 
